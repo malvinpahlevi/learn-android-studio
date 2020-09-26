@@ -4,6 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+
+/*
+* its for call other activity which still same project or other.
+* */
 public class Explicit extends AppCompatActivity {
 
     @Override
@@ -11,4 +15,7 @@ public class Explicit extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_explicit);
     }
+
+
+
 }
