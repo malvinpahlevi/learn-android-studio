@@ -14,14 +14,29 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //get btnimplicit to obj
+        /*
+        * set btnImplicit to obj
+        * */
         Button btnimplicit = findViewById(R.id.btnimplicit);
-
-        //listen onClik on button
+        //listen onClik button
         btnimplicit.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, Implicit.class);
+                //doin implicit activity
+                startActivity(intent);
+            }
+        });
+
+        /*
+        * set btnExplicit to obj
+        * */
+        Button btnexplicit = findViewById(R.id.btnexplicit);
+        //listen onClick button
+        btnexplicit.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Explicit.class);
                 //doin implicit activity
                 startActivity(intent);
             }
